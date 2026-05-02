@@ -4,7 +4,7 @@ First Time Git & Github Setup
 2.git add
 3.git commit -m "any message"
 4.git remote add origin
-5.git remote set-url origin 
+5.git remote set-url origin
 6.git push --set-upstream origin master
 
 Next Time Onwards
