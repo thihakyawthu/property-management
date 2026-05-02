@@ -18,7 +18,7 @@ import java.util.Optional;
 import static org.antlr.v4.runtime.tree.xpath.XPath.findAll;
 
 @Service
-public class PropertyServiceImpl implements PropertyService {
+public class   PropertyServiceImpl implements PropertyService {
 
     @Value("${pms.dummy}")
     private String dummy;
