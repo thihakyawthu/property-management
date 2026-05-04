@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
-
-
     @Autowired
     private UserService userService;
 
@@ -25,7 +23,7 @@ public class UserController {
 
         userDTO = userService.register(userDTO);
 
-        ResponseEntity<UserDTO> responseEntity = new ResponseEntity<>(userDTO, HttpStatus.CREATED);
-        return responseEntity;
+        return new ResponseEntity<>(userDTO, HttpStatus.CREATED);
+
     }
 }
